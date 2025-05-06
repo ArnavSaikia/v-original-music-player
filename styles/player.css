@@ -1,0 +1,54 @@
+body{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    width: 98vw;
+    margin: 0;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(227, 61, 180);
+    height: auto;
+    width: 30vw;
+}
+
+
+.thumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-controls{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.media-button{
+    background: none;
+    border: none;
+    height: 60px;
+    width: 60px;
+}
+
+.fa-solid{
+    color: #42E4CE;
+    height: 60px;
+    width: 60px;
+}

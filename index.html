@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>music-player</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/player.css">
+    <script src="https://kit.fontawesome.com/06b14e7a2c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="main-body" >
@@ -13,19 +18,29 @@
             <div class="thumbnail">
                 <img class="thumbnail-img" src="media/7-nation-army.jpg">
             </div>
+
+            <div class="song-metadata">
+                <p class="title">Feeling Arty Farty</p>
+                <p class="song-info">35 minutes • 12 tracks</p>
+                <p>Playing next   David Manson - the ways to live</p>
+            </div>
+
             <div class="controls">
                 <audio controls>
                     <source src="media/Seven Nation Army (The Glitch Mob Remix).mp3">
                 </audio>
-                <button class="backward">
-                    Backward
-                </button>
-                <button class="play">
-                    Play
-                </button>
-                <button class="forward">
-                    Forward
-                </button>
+                <input type="range" value="0">
+                <div class="media-controls">
+                    <button class="backward media-button">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                    <button class="play media-button">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="forward media-button">
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
