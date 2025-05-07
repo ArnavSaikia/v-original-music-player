@@ -45,10 +45,38 @@ body{
     border: none;
     height: 60px;
     width: 60px;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #42E4CE;
+}
+
+.media-button:nth-child(2){
+    /* transform: scale(2); */
+    color: white;
+    background-color: #42E4CE;
+    border-radius: 50%;
 }
 
 .fa-solid{
-    color: #42E4CE;
-    height: 60px;
-    width: 60px;
+    transform: scale(2.2);
+}
+
+#progress-bar{
+    -webkit-appearance: none;
+    width: 90%;
+    height: 8px;
+    background-color: rgb(201, 195, 195); 
+    border-radius: 3px;
+    cursor: pointer;   
+}
+
+#progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #42E4CE;
+    border-radius: 50%;
 }
