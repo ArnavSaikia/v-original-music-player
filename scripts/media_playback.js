@@ -36,13 +36,20 @@ function changeCtrlIcon(){
 // CODE FLOW STARTS HERE
 let progressInterval = setInterval(() => {
     progress.value = song.currentTime;
-}, 500);
+}, 750);
+
+let endCheckerInterval = setInterval(() => {
+    if (song.currentTime == song.duration && playPause.classList.contains('fa-pause')){
+        playPause.classList.remove('fa-pause');
+        playPause.classList.add('fa-play');
+    }
+},500);
 
 document.querySelector('.play').addEventListener('click', () => {
     changeCtrlIcon();
 });
 
-progress.onchange = () => {
+progress.onchange = () => {     // same as progress.addEventListener('change',()=>{}); (kinda)
     clearInterval(progressInterval);
     song.currentTime = progress.value;
     song.play();
@@ -50,5 +57,5 @@ progress.onchange = () => {
     playPause.classList.add('fa-pause');
     progressInterval = setInterval(() => {
         progress.value = song.currentTime;
-    }, 500);
+    }, 750);
 };

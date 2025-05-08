@@ -1,6 +1,8 @@
+/* #A3ADAF */
 body{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
+    background-color: bisque;
 }
 
 .main-body{
@@ -16,7 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(227, 61, 180);
+    background-color: rgb(255, 255, 255);
     height: auto;
     width: 30vw;
 }
@@ -68,7 +70,7 @@ body{
     -webkit-appearance: none;
     width: 90%;
     height: 8px;
-    background-color: rgb(201, 195, 195); 
+    background-color: #A3ADAF; 
     border-radius: 3px;
     cursor: pointer;   
 }
@@ -79,4 +81,43 @@ body{
     height: 20px;
     background-color: #42E4CE;
     border-radius: 50%;
+}
+
+.song-metadata{
+    margin: 0 6%;
+}
+
+.title{
+    margin: 0px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #404642;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.song-info{
+    color: #A3ADAF;
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+}
+
+.play-next{
+    margin: 35px 0 25px 0;
+}
+
+.play-next span:nth-child(1){
+    color: #A3ADAF;
+    font-family: "Manrope", sans-serif;
+}
+
+.play-next span:nth-child(2){
+    color: #404642;
+    font-family: "Manrope", sans-serif;
+    font-weight: bold;
+    margin-left: 13px;
 }
