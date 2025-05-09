@@ -28,6 +28,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 450px;
+}
+
+.thumbnail-img{
+    height: 450px;
+    object-fit: cover;
 }
 
 .controls{
@@ -84,7 +90,7 @@ body{
 }
 
 .song-metadata{
-    margin: 0 6%;
+    margin: 20px 6%;
 }
 
 .title{
