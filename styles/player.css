@@ -33,7 +33,7 @@ body{
 
 .thumbnail-img{
     height: 450px;
-    object-fit: cover;
+    object-fit: fit;
 }
 
 .controls{

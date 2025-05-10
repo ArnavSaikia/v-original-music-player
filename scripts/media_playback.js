@@ -1,3 +1,4 @@
+
 console.log("Script loaded!");
 let progress = document.getElementById('progress-bar');
 let song = document.querySelector(".song");
@@ -23,6 +24,7 @@ function changeCtrlIcon(){
         return;
     }
 }
+
 
 
 
@@ -59,3 +61,10 @@ progress.onchange = () => {     // same as progress.addEventListener('change',()
         progress.value = song.currentTime;
     }, 750);
 };
+
+// let songResults = fetchTracks();
+// console.log(songResults);
+// const track = songResults.results[0];
+//         document.querySelector('.thumbnail-img').src = track.album_image;
+//         document.querySelector('.song').src = track.audio;
+//         document.querySelector('.title').textContent = track.name;
