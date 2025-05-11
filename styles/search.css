@@ -1,0 +1,45 @@
+body{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    width: 98vw;
+    margin: 0;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: rgb(255, 255, 255);
+    height: 99vh;
+    width: 30vw;
+    transform: scale(0.8);
+    padding: 40px 40px;
+}
+
+.search-text{
+    font-weight: bold;
+    font-size: 42px;
+    color: #404642;
+}
+
+.search-box{
+    margin-top: 20px;
+    height: 50px;
+    background-color: #F1F1F1;
+    border: none;
+    border-radius: 25px;
+    padding-left: 24px;
+}
+
+.search-box::placeholder{
+    color: #C0C6C8;
+    font-family: "Manrope", sans-serif;
+}
