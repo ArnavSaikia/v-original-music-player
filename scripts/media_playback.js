@@ -47,6 +47,13 @@ let endCheckerInterval = setInterval(() => {
     }
 },500);
 
+setInterval(() => {
+    let currentMinute = Math.floor(song.currentTime/60);
+    let currentSecond = Math.round(song.currentTime%60);
+
+    document.getElementById("timestamp").textContent = `${'0'+currentMinute}:${currentSecond>9?currentSecond:('0' + currentSecond)}`;
+},1000);
+
 document.querySelector('.play').addEventListener('click', () => {
     changeCtrlIcon();
 });

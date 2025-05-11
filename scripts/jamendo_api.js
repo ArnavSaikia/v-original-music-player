@@ -28,6 +28,7 @@ async function fetchTracks(){
     results = await results.json();
     console.log(results);
     songResult = results;
+    songResult.results.sort(() => Math.random() - 0.5); //for shuffling the array
     let totalTime = 0;
     songResult.results.forEach(element => {
         totalTime += element.duration;
@@ -49,6 +50,10 @@ function backward(){
         document.querySelector('.song').src = track.audio;
         document.querySelector('.title').textContent = track.name;
         document.querySelector('.next-song').textContent = `${songResult.results[i+1].artist_name} - ${songResult.results[i+1].name}`;
+    
+    song.play();
+    playPause.classList.remove('fa-play');
+    playPause.classList.add('fa-pause');
 };
 
 function forward(){
@@ -61,6 +66,10 @@ function forward(){
         document.querySelector('.title').textContent = track.name;
         if(i!=9) document.querySelector('.next-song').textContent = `${songResult.results[i+1].artist_name} - ${songResult.results[i+1].name}`;
         else document.querySelector('.next-song').textContent = "None";
+
+    song.play();
+    playPause.classList.remove('fa-play');
+    playPause.classList.add('fa-pause');
 };
 
 //CODE FLOW STARTS HERE
