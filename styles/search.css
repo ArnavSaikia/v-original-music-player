@@ -37,6 +37,7 @@ body{
     border: none;
     border-radius: 25px;
     padding-left: 24px;
+    font-family: "Manrope", sans-serif;
 }
 
 .search-box::placeholder{
@@ -50,7 +51,8 @@ body{
 }
 
 .song-box:nth-child(1){
-    margin: 20px 0 20px 20px;;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
 }
 
 .song-box{
@@ -60,6 +62,7 @@ body{
     display: flex;
     align-items: center;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .song-box img{

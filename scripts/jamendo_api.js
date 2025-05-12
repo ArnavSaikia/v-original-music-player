@@ -25,7 +25,7 @@ let songResult = 0;
 
 async function fetchTracks(){
     let results = await fetch(fetchURL);
-    results = await results.json();
+    results = await results.json();  
     console.log(results);
     songResult = results;
     songResult.results.sort(() => Math.random() - 0.5); //for shuffling the array
@@ -74,8 +74,22 @@ function forward(){
 
 //CODE FLOW STARTS HERE
 let i = 0;
+const trackRequestString = localStorage.getItem('selectedTrack');
+// console.log(trackRequestString);
 console.log("fetching tracks");
-fetchTracks();
+
+if(trackRequestString){
+    const trackRequest = JSON.parse(trackRequestString);
+    document.querySelector('.thumbnail-img').src = trackRequest.album_image;
+    document.querySelector('.song').src = trackRequest.audio;
+    document.querySelector('.title').textContent = trackRequest.name;
+    document.querySelector('.next-song').textContent = "None";
+    document.querySelector('.song-info').textContent = `${Math.round(trackRequest.duration/60)} minutes • 1 tracks`;
+    localStorage.removeItem('selectedTrack');
+}
+else{
+    fetchTracks();
+}
 
 document.querySelector('.backward').addEventListener('click', () => {
     backward();
