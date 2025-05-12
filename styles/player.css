@@ -148,7 +148,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid #404642;
+    border:1px solid #404642;
     top: 20px;
     left: 20px;
     border-radius: 50%;
