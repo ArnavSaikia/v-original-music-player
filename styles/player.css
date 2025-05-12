@@ -22,6 +22,7 @@ body{
     height: auto;
     width: 30vw;
     transform: scale(0.8);
+    position: relative;
 }
 
 
@@ -140,4 +141,24 @@ body{
     font-family: "Manrope", sans-serif;
     font-size: 14px;
     margin-left: 1px;
+}
+
+#search-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #404642;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    /* background-color: #C0C6C8; */
+    background-color: white;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass{
+    transform: scale(1.5);
 }

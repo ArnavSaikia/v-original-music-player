@@ -75,3 +75,7 @@ progress.onchange = () => {     // same as progress.addEventListener('change',()
 //         document.querySelector('.thumbnail-img').src = track.album_image;
 //         document.querySelector('.song').src = track.audio;
 //         document.querySelector('.title').textContent = track.name;
+
+document.getElementById('search-button').addEventListener('click', () => {
+    window.location.href = 'search.html';
+})
