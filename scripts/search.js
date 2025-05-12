@@ -8,7 +8,7 @@ searchBox.addEventListener('keydown', (event) => {
         let searchQuery = searchBox.value;
         let insertedHTML = '';
         
-        fetch(`https://api.jamendo.com/v3.0/tracks/?client_id=${myClientID}&format=json&limit=10&search=${searchQuery}`)
+        fetch(`https://api.jamendo.com/v3.0/tracks/?client_id=${myClientID}&format=json&limit=8&search=${searchQuery}`)
             .then(result => result.json())
             .then(jsonResult => {
                 const searchResults = jsonResult.results;
@@ -16,7 +16,7 @@ searchBox.addEventListener('keydown', (event) => {
                     let trackHTML = `<div class="song-box">
                         <img src="${track.album_image}" height=40px width=40px>
                         <div class="song-metadata">
-                            <span class="track-name">${track.name}</span>
+                            <span class="track-name" style="display:block;">${track.name}</span>
                             <span class="artist-name">${track.artist_name}</span>
                         </div>
                     </div>
