@@ -18,10 +18,9 @@ A modern, responsive web music player built with vanilla JavaScript. It streams 
 
 ## Technologies Used
 
-- Vanilla JavaScript (ES6+)  
-- HTML5 & CSS3  
-- Jamendo API for music streaming  
-- Git for version control  
+- Vanilla JS 
+- HTML & CSS  
+- Jamendo API for music streaming 
 
 ## Installation
 
